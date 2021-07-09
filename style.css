@@ -1,6 +1,14 @@
 p{
     margin: 0;
     padding: 0;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+h1{
+    margin-left: 15px;
 }
 header{
     text-align: center;
@@ -71,5 +79,58 @@ header{
     border-radius: 100%;
     color: #fff;
     font-size: 0.9em;
-    
+    position: relative;
+    left: -12px;
+}
+.function-step__icon{
+    margin-right: 20px;
+    font-size: 1.2em;
+    margin-left: 6px;
+}
+.function-step--pink{
+    background-color: #f5daf3;
+    color: #9356dc;
+}
+.restaurant{
+    background: #f2f2f2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.restaurant__card-4{
+    display: flex;
+    flex-direction: column;
+}
+.restaurant-card{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+.restaurant-card__img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 150px;
+    object-fit: cover;
+}
+.restaurant-card__description{
+    display: flex;
+    background: white;
+    height: 75px;
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px;
+    margin-top: -5px;
+    box-shadow: 1px 2px 8px #bdbdbd ;
+}
+.restaurant-card__description__title{
+    margin-left: 15px;
+}
+.restaurant-card__description__title h2{
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.restaurant-card__description__heart{
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 1.6em;
 }
