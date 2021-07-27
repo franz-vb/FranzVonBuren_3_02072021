@@ -75,6 +75,10 @@ header{
     box-shadow: 3px 3px 8px #9356DC;
     margin-bottom: 20px;
 }
+.presentation__btn:hover{
+    box-shadow: 4px 4px 8px #212121;
+    background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+}
 
 /* function */
 
@@ -304,6 +308,10 @@ header a{
     box-shadow: 3px 3px 8px #999999;
     margin-left: 25%;
     margin-bottom: 70px;
+}
+.menu__btn__text:hover{
+    box-shadow: 4px 4px 8px #212121;
+    background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
 }
 
 /* responsive - tablette */
