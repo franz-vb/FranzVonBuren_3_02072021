@@ -164,16 +164,25 @@ header{
     font-size: 1.2em;
     font-weight: bold;
 }
-.restaurant-card__description__heart{
+
+.restaurant-card__description__heart-white{
     margin-right: 30px;
     margin-top: 20px;
     font-size: 1.6em;
 }
-
-.fa-heart:hover{
-    background:-webkit-linear-gradient(#9356dc, #ff79da);
-    -webkit-background-clip: text;
+.restaurant-card__description__heart-white--pink{
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 1.6em;
+    display: flex;
+    margin-top: -29px; 
 }
+.fill:hover{
+    background: linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .restaurant-card__new{
   display: flex;    
   align-items: center;
@@ -270,6 +279,8 @@ header a{
     font-size: 1em;
     font-weight: 500;
 }
+
+
 .menu__menu-3__choice-check{
     display: flex;
     background: white;
@@ -297,6 +308,17 @@ header a{
 .menu__menu-3__choice-check:hover > .menu__menu-3__choice-check__check{
     width: 50px;
 }
+.menu__menu-3__choice-check:hover > .menu__menu-3__choice-check__check > .fa-check-circle{
+    animation: rotation360 0.5s;
+}
+@keyframes rotation360{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
 .menu__menu-3__choice-check:hover > .menu__menu-3__choice-check__choice{
     border-radius: 10px 0 0 10px;
 }
@@ -320,7 +342,7 @@ header a{
     height: 60px;
     width: 0;
     overflow: hidden;
-    transition: width 0.2s ease-in-out;
+    transition: width 0.5s ease-in-out;
 }
 .fa-check-circle {
     color: white;
