@@ -164,7 +164,9 @@ header{
     font-size: 1.2em;
     font-weight: bold;
 }
-
+.restaurant-card__description__heart{
+    
+}
 .restaurant-card__description__heart-white{
     margin-right: 30px;
     margin-top: 20px;
@@ -175,12 +177,15 @@ header{
     margin-top: 20px;
     font-size: 1.6em;
     display: flex;
-    margin-top: -29px; 
-}
-.fill:hover{
-    background: linear-gradient(#9356dc, #ff79da);
+    margin-top: -29px;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    height: 0px;
+    transition: 1s;
+}
+.restaurant-card__description__heart-white--pink:hover{
+    height: 34px;
 }
 
 .restaurant-card__new{
