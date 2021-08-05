@@ -164,15 +164,15 @@ header{
     font-size: 1.2em;
     font-weight: bold;
 }
-.restaurant-card__description__heart{
+.heart{
     
 }
-.restaurant-card__description__heart-white{
+.heart-white{
     margin-right: 30px;
     margin-top: 20px;
     font-size: 1.6em;
 }
-.restaurant-card__description__heart-white--pink{
+.heart-white--pink{
     margin-right: 30px;
     margin-top: 20px;
     font-size: 1.6em;
@@ -184,7 +184,7 @@ header{
     height: 0px;
     transition: 1s;
 }
-.restaurant-card__description__heart-white--pink:hover{
+.heart-white--pink:hover{
     height: 34px;
 }
 
@@ -270,7 +270,7 @@ header a{
     flex-direction: column; 
 }
 
-.menu__menu-3{
+.menu-3{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
@@ -286,7 +286,7 @@ header a{
 }
 
 
-.menu__menu-3__choice-check{
+.choice-check{
     display: flex;
     background: white;
     width: 90%;
@@ -310,10 +310,10 @@ header a{
       opacity: 1;
     }
 }
-.menu__menu-3__choice-check:hover > .menu__menu-3__choice-check__check{
+.choice-check:hover > .choice-check__check{
     width: 50px;
 }
-.menu__menu-3__choice-check:hover > .menu__menu-3__choice-check__check > .fa-check-circle{
+.choice-check:hover > .choice-check__check > .fa-check-circle{
     animation: rotation360 0.5s;
 }
 @keyframes rotation360{
@@ -324,10 +324,11 @@ header a{
       transform: rotate(360deg);
     }
 }
-.menu__menu-3__choice-check:hover > .menu__menu-3__choice-check__choice{
+
+.choice-check:hover > .choice-check__choice{
     border-radius: 10px 0 0 10px;
 }
-.menu__menu-3__choice-check__choice{
+.choice-check__choice{
     display: flex;
     flex-direction: column;
     background: white;
@@ -338,7 +339,7 @@ header a{
     height: 60px;
 }
 
-.menu__menu-3__choice-check__check{
+.choice-check__check{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,7 +348,7 @@ header a{
     height: 60px;
     width: 0;
     overflow: hidden;
-    transition: width 0.5s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 .fa-check-circle {
     color: white;
@@ -360,7 +361,7 @@ header a{
     padding-left: 10px;
     font-size: 1em;
 }
-.menu__menu-3__choice-check__choice__add-price{
+.choice__add-price{
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
@@ -442,16 +443,16 @@ header a{
     .restaurant-card{
         width: 18%;
     }
-    .restaurant-card__description__heart{
+    .heart{
         margin-right: 5%;
     }
-    .menu__menu-3{
+    .menu-3{
         flex-direction: row;
         margin-right: 5%;
     }
-    .menu__menu-3__choice{
+    /*.choise-check__choice{
         width: 40%;
-    }
+    }*/
     .menu__btn{
         display: flex;
         justify-content: center;
@@ -461,6 +462,9 @@ header a{
         margin: 50px;
         margin-top: 10px;
         margin-bottom: 100px; 
+    }
+    .menu-3 h2{
+        flex-basis: 20%;
     }
 }
 }
