@@ -17,8 +17,80 @@ h1{
     margin-bottom: 25px;
     margin-top: 20px;
 }
+/* spinner */
 
-
+.loader{
+    position: fixed; 
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    animation: loader 3s forwards;
+}
+@keyframes loader {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+.circle-80{
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+    border-right: 10px solid #99E2D0;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.7s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.loader .circle-120 {
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+    border-right: 10px solid #99E2D0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .chargement {
+    width: 210px;
+    height: 0px;
+    padding-top: 180px;
+    padding-left: 10%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 25px;
+    color: #FF79DA;
+  }
 /* header */
 
 header{
@@ -187,7 +259,6 @@ header{
 .heart-white--pink:hover{
     height: 34px;
 }
-
 .restaurant-card__new{
   display: flex;    
   align-items: center;
@@ -324,7 +395,6 @@ header a{
       transform: rotate(360deg);
     }
 }
-
 .choice-check:hover > .choice-check__choice{
     border-radius: 10px 0 0 10px;
 }
