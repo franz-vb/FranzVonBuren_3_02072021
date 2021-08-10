@@ -150,6 +150,7 @@ header{
 .presentation__btn:hover{
     box-shadow: 4px 4px 8px #212121;
     background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+    cursor: pointer;
 }
 
 /* function */
@@ -173,6 +174,7 @@ header{
 .function-step:hover{
     background-color: #f5daf3;
     color: #9356dc;
+    cursor: pointer;
 }
 .function-step__cercle{
     display: flex;
@@ -244,6 +246,7 @@ header{
     margin-top: 20px;
     font-size: 1.6em;
 }
+
 .heart-white--pink{
     margin-right: 30px;
     margin-top: 20px;
@@ -258,7 +261,20 @@ header{
 }
 .heart-white--pink:hover{
     height: 34px;
+    cursor: pointer;
 }
+/*.heart-white--pink:hover > .heart-white > .fa-heart{
+    animation: essaie 0.5s;
+}
+@keyframes essaie {
+    0% {
+      opacity: 0;
+    }
+    100% {;
+      opacity: 1;
+    }
+}
+*/
 .restaurant-card__new{
   display: flex;    
   align-items: center;
@@ -303,7 +319,7 @@ header{
     font-family: roboto;
 }
 
-/* la palette du gout */
+/* Menus */
 
 header a{
     position: absolute;
@@ -367,7 +383,6 @@ header a{
     box-shadow: 1px 2px 8px #bdbdbd;
     height: 60px;
     animation-duration: 3s;
-    animation-fill-mode: forwards;
     animation-name: fade-in-bottom;
     /*animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
 }
@@ -383,6 +398,7 @@ header a{
 }
 .choice-check:hover > .choice-check__check{
     width: 50px;
+    cursor: pointer;
 }
 .choice-check:hover > .choice-check__check > .fa-check-circle{
     animation: rotation360 0.5s;
@@ -397,6 +413,7 @@ header a{
 }
 .choice-check:hover > .choice-check__choice{
     border-radius: 10px 0 0 10px;
+    cursor: pointer;
 }
 .choice-check__choice{
     display: flex;
@@ -463,6 +480,7 @@ header a{
 .menu__btn__text:hover{
     box-shadow: 4px 4px 8px #212121;
     background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+    cursor: pointer;
 }
 
   
@@ -501,6 +519,13 @@ header a{
 /* responsive - desktop */
 
 @media screen and (min-width: 1200px){
+    .chargement {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
     .presentation__btn{
         width: 15%;
     }
