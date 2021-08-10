@@ -250,14 +250,14 @@ header{
 .heart-white--pink{
     margin-right: 30px;
     margin-top: 20px;
-    font-size: 1.7em;
+    font-size: 1.6em;
     display: flex;
     margin-top: -29px;
     background: -webkit-linear-gradient(#9356dc, #ff79da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 0px;
-    transition: 1s;
+    /*transition: 1s;*/
     opacity: 0;
 }
 .heart-white--pink:hover{
@@ -390,9 +390,12 @@ header a{
     animation-name: fade-in-bottom;
     /*animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
 }
+.choice-duration{
+    animation-duration: 4s;
+}
 @keyframes fade-in-bottom {
     0% {
-      transform: translateY(-15px);
+      transform: translateY(50px);
       opacity: 0;
     }
     100% {
@@ -427,7 +430,7 @@ header a{
     border-radius: 10px;
     margin-bottom: 15px;
     box-shadow: 1px 2px 8px #bdbdbd;
-    height: 60px;
+    height: 60px;  
 }
 
 .choice-check__check{
