@@ -250,7 +250,7 @@ header{
 .heart-white--pink{
     margin-right: 30px;
     margin-top: 20px;
-    font-size: 1.6em;
+    font-size: 1.7em;
     display: flex;
     margin-top: -29px;
     background: -webkit-linear-gradient(#9356dc, #ff79da);
@@ -258,10 +258,13 @@ header{
     -webkit-text-fill-color: transparent;
     height: 0px;
     transition: 1s;
+    opacity: 0;
 }
 .heart-white--pink:hover{
     height: 34px;
     cursor: pointer;
+    opacity: 1;
+    position: fixed;
 }
 /*.heart-white--pink:hover > .heart-white > .fa-heart{
     animation: essaie 0.5s;
@@ -383,6 +386,7 @@ header a{
     box-shadow: 1px 2px 8px #bdbdbd;
     height: 60px;
     animation-duration: 3s;
+    /*animation-fill-mode: forwards;*/
     animation-name: fade-in-bottom;
     /*animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
 }
