@@ -385,13 +385,16 @@ header a{
     margin-bottom: 15px;
     box-shadow: 1px 2px 8px #bdbdbd;
     height: 60px;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     /*animation-fill-mode: forwards;*/
     animation-name: fade-in-bottom;
     /*animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
 }
-.choice-duration{
-    animation-duration: 4s;
+.choice-duration-2{
+    animation-duration: 2s;
+}
+.choice-duration-25{
+    animation-duration: 2.5s;
 }
 @keyframes fade-in-bottom {
     0% {
