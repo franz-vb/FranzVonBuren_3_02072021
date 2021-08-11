@@ -27,7 +27,7 @@ h1{
     height: 100%;
     background-color: white;
     z-index: 10;
-    animation: loader 3s forwards;
+    animation: loader 300s forwards;
 }
 @keyframes loader {
     0% {
@@ -78,16 +78,13 @@ h1{
     }
   }
   .chargement {
-    width: 210px;
-    height: 0px;
+    height: 25px;
     padding-top: 180px;
-    padding-left: 10%;
+    transform: translateX(-50%) translateY(120px);
     margin: auto;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    left: 50%;
+    bottom: 50%;
     font-size: 25px;
     color: #FF79DA;
   }
@@ -264,7 +261,7 @@ header{
     height: 34px;
     cursor: pointer;
     opacity: 1;
-    position: fixed;
+    position: absolute;
 }
 /*.heart-white--pink:hover > .heart-white > .fa-heart{
     animation: essaie 0.5s;
@@ -432,7 +429,6 @@ header a{
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-shadow: 1px 2px 8px #bdbdbd;
     height: 60px;  
 }
 
@@ -529,13 +525,7 @@ header a{
 /* responsive - desktop */
 
 @media screen and (min-width: 1200px){
-    .chargement {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-      }
+    
     .presentation__btn{
         width: 15%;
     }
