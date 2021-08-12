@@ -17,6 +17,7 @@ h1{
     margin-bottom: 25px;
     margin-top: 20px;
 }
+
 /* spinner */
 
 .loader{
@@ -27,7 +28,7 @@ h1{
     height: 100%;
     background-color: white;
     z-index: 10;
-    animation: loader 300s forwards;
+    animation: loader 2s forwards;
 }
 @keyframes loader {
     0% {
@@ -88,7 +89,8 @@ h1{
     font-size: 25px;
     color: #FF79DA;
   }
-/* header */
+
+/* accueil - header */
 
 header{
     text-align: center;
@@ -199,12 +201,6 @@ header{
     padding-top: 40px;
     padding-bottom: 40px;
 }
-/*
-.restaurant__card-4{
-    display: flex;
-    flex-direction: column;
-}
-*/
 .restaurant-card{
     width: 90%;
     margin-left: 5%;
@@ -235,6 +231,9 @@ header{
     font-size: 1.2em;
     font-weight: bold;
 }
+
+/* coeur */
+
 .heart{
     
 }
@@ -263,18 +262,6 @@ header{
     opacity: 1;
     position: absolute;
 }
-/*.heart-white--pink:hover > .heart-white > .fa-heart{
-    animation: essaie 0.5s;
-}
-@keyframes essaie {
-    0% {
-      opacity: 0;
-    }
-    100% {;
-      opacity: 1;
-    }
-}
-*/
 .restaurant-card__new{
   display: flex;    
   align-items: center;
@@ -319,7 +306,7 @@ header{
     font-family: roboto;
 }
 
-/* Menus */
+/* les 4 Menus */
 
 header a{
     position: absolute;
@@ -383,9 +370,7 @@ header a{
     box-shadow: 1px 2px 8px #bdbdbd;
     height: 60px;
     animation-duration: 1.5s;
-    /*animation-fill-mode: forwards;*/
     animation-name: fade-in-bottom;
-    /*animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;*/
 }
 .choice-duration-2{
     animation-duration: 2s;
@@ -489,8 +474,6 @@ header a{
     cursor: pointer;
 }
 
-  
-
 /* responsive - tablette */
 
 @media screen and (min-width: 700px){
@@ -545,9 +528,6 @@ header a{
         flex-direction: row;
         margin-right: 5%;
     }
-    /*.choise-check__choice{
-        width: 40%;
-    }*/
     .menu__btn{
         display: flex;
         justify-content: center;
