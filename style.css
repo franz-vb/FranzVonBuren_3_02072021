@@ -378,6 +378,9 @@ header a{
 .choice-duration-25{
     animation-duration: 2.5s;
 }
+.choice-duration-3{
+    animation-duration: 3s;
+}
 @keyframes fade-in-bottom {
     0% {
       transform: translateY(50px);
