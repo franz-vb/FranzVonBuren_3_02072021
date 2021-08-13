@@ -253,7 +253,7 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 0px;
-    /*transition: 1s;*/
+    transition: 1s;
     opacity: 0;
 }
 .heart-white--pink:hover{
