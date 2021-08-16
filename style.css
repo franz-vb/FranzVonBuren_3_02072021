@@ -372,6 +372,9 @@ header a{
     animation-duration: 1.5s;
     animation-name: fade-in-bottom;
 }
+
+/* apparition menu */
+
 .choice-duration-2{
     animation-duration: 2s;
 }
@@ -391,6 +394,9 @@ header a{
       opacity: 1;
     }
 }
+
+/* validation */
+
 .choice-check:hover > .choice-check__check{
     width: 50px;
     cursor: pointer;
