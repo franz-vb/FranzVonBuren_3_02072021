@@ -248,8 +248,8 @@ header{
     margin-top: 20px;
     font-size: 1.6em;
     display: flex;
-    margin-top: -29px;
-    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    margin-top: -28px;
+    background: linear-gradient(#9356dc, #ff79da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 0px;
